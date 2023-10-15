@@ -19,6 +19,8 @@ interface CategodyPageProps {
     }
 }
 
+export const revalidate = 0;
+
 const CategodyPage: React.FC<CategodyPageProps> = async ({ params, searchParams }) => {
     const products = await getProducts({
         categoryId: params.categoryId,

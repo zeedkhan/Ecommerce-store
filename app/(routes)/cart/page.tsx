@@ -6,6 +6,8 @@ import CartItem from "./components/cart-item";
 import Summary from "./components/summary";
 import {useEffect, useState} from "react"
 
+export const revalidate = 0;
+
 const CartPage = () => {
 
     const [isMounted, setIsMounted] = useState<boolean>(false);
